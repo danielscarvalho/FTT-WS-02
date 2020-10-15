@@ -14,6 +14,13 @@ public class CalculadoraServerPublisher {
   {
 	System.out.println("Serving - " + new Date());
 	
+	//Debug - para visualizar as mensagens XML no console do Eclipse...
+	System.setProperty("com.sun.xml.ws.transport.http.client.HttpTransportPipe.dump", "true");
+	System.setProperty("com.sun.xml.internal.ws.transport.http.client.HttpTransportPipe.dump", "true");
+	System.setProperty("com.sun.xml.ws.transport.http.HttpAdapter.dump", "true");
+	System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dump", "true");
+	System.setProperty("com.sun.xml.internal.ws.transport.http.HttpAdapter.dumpTreshold", "999999");
+	
     Endpoint.publish("http://127.0.0.1:9876/calc", new CalculadoraServerImpl() );
   }
 }
