@@ -1,0 +1,65 @@
+Serving - Thu Nov 12 22:12:57 BRST 2020
+---[HTTP request]---
+Accept: text/xml, multipart/related
+Connection: keep-alive
+Host: 127.0.0.1:9876
+User-agent: JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e
+Content-type: text/xml; charset=utf-8
+Soapaction: "http://calc/CalculadoraServer/somaRequest"
+Content-length: 194
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:soma xmlns:ns2="http://calc/"><arg0>5.0</arg0><arg1>1.0</arg1></ns2:soma></S:Body></S:Envelope>--------------------
+
+---[HTTP response 200]---
+Date: Fri, 13 Nov 2020 00:21:12 GMT
+Transfer-encoding: chunked
+Content-type: text/xml; charset=utf-8
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:somaResponse xmlns:ns2="http://calc/"><return>6.0</return></ns2:somaResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP request]---
+Accept: text/xml, multipart/related
+Connection: keep-alive
+Host: 127.0.0.1:9876
+User-agent: JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e
+Content-type: text/xml; charset=utf-8
+Soapaction: "http://calc/CalculadoraServer/subtracaoRequest"
+Content-length: 204
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:subtracao xmlns:ns2="http://calc/"><arg0>5.0</arg0><arg1>1.0</arg1></ns2:subtracao></S:Body></S:Envelope>--------------------
+
+---[HTTP response 200]---
+Date: Fri, 13 Nov 2020 00:21:12 GMT
+Transfer-encoding: chunked
+Content-type: text/xml; charset=utf-8
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:subtracaoResponse xmlns:ns2="http://calc/"><return>4.0</return></ns2:subtracaoResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP request]---
+Accept: text/xml, multipart/related
+Connection: keep-alive
+Host: 127.0.0.1:9876
+User-agent: JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e
+Content-type: text/xml; charset=utf-8
+Soapaction: "http://calc/CalculadoraServer/multiplicacaoRequest"
+Content-length: 212
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:multiplicacao xmlns:ns2="http://calc/"><arg0>5.0</arg0><arg1>1.0</arg1></ns2:multiplicacao></S:Body></S:Envelope>--------------------
+
+---[HTTP response 200]---
+Date: Fri, 13 Nov 2020 00:21:12 GMT
+Transfer-encoding: chunked
+Content-type: text/xml; charset=utf-8
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:multiplicacaoResponse xmlns:ns2="http://calc/"><return>5.0</return></ns2:multiplicacaoResponse></S:Body></S:Envelope>--------------------
+
+---[HTTP request]---
+Accept: text/xml, multipart/related
+Connection: keep-alive
+Host: 127.0.0.1:9876
+User-agent: JAX-WS RI 2.2.9-b130926.1035 svn-revision#5f6196f2b90e9460065a4c2f4e30e065b245e51e
+Content-type: text/xml; charset=utf-8
+Soapaction: "http://calc/CalculadoraServer/divisaoRequest"
+Content-length: 200
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:divisao xmlns:ns2="http://calc/"><arg0>5.0</arg0><arg1>1.0</arg1></ns2:divisao></S:Body></S:Envelope>--------------------
+
+---[HTTP response 200]---
+Date: Fri, 13 Nov 2020 00:21:12 GMT
+Transfer-encoding: chunked
+Content-type: text/xml; charset=utf-8
+<?xml version="1.0" ?><S:Envelope xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><S:Body><ns2:divisaoResponse xmlns:ns2="http://calc/"><return>5.0</return></ns2:divisaoResponse></S:Body></S:Envelope>--------------------
+
